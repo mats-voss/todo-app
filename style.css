@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e2e2e2;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+h1 {
+    color: rgb(191, 138, 216);
+    font-size: 100px;
+    text-align: center;
+    opacity: 0.5;
+    margin-bottom: 0;
+    text-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    max-width: 100%;
+    width: 350px;
+}
+
+.input {
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    display: block;
+    width: 100%;
+}
+
+.input::placeholder {
+    color: #dedede;
+}
+
+.todos {
+    background-color: white;
+    border-color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todos li {
+    border-top: 1px solid #e5e5e5;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.todos li.completed {
+    color: #6f9b6f;
+    text-decoration: line-through;
+}
+
+.discr {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    color: #b6b6b6;
+    margin-top: 30px;
+
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    form {
+        width: 325px;
+    }
+
+    .input {
+        font-size: 20px;
+        padding: 8px 13px;
+    }
+
+    .todos li{
+        font-size: 14px;
+        padding: 8px 13px;
+    }
+
+    .discr {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    form {
+        width: 275px;
+    }
+
+    .input {
+        font-size: 17px;
+        padding: 8px 13px;
+    }
+
+    .todos li {
+        font-size: 13px;
+        padding: 8px 13px;
+    }
+
+    .discr {
+        font-size: 11px;
+        margin-top: 15px;
+    }
+}
